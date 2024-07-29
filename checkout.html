@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trial Order : Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/global.css" />
+  </head>
+
+  <body>
+    <!--div wrapper begin-->
+    <div class="wrapper">
+      <!--div page heading-->
+      <div class="cart-page-heading">
+        <h1>Checkout</h1>
+        <p>Review and make adjustments to your cart</p>
+      </div>
+      <!--/ div page heading-->
+      <!--div flex row-->
+      <div class="d-flex flex-row gap-24">
+        <div class="w-2-3">
+          <!--div step 1-->
+          <div class="checkout-form" id="checkoutstep1">
+            <div class="d-flex flex-row gap-24">
+              <div>
+                <div class="checkout-list">
+                  <h5><span>1</span></h5>
+                </div>
+              </div>
+              <!--div steps inner-->
+              <div class="w-full">
+                <div class="d-flex item-center justify-between">
+                  <div>
+                    <h5>Account Details</h5>
+                    <p>
+                      Account Details of the customer to deliver the products
+                    </p>
+                  </div>
+                  <!--Edit section-->
+                  <div class="edit-details d-flex item-center gap-24">
+                    <a
+                      class="text-link"
+                      onclick="toggleHighlight('checkoutstep1')"
+                      >Edit</a
+                    ><button
+                      type="button"
+                      class="cs-icon-chevron-up down-chevrons"
+                      onclick="downChevrons('checkoutstep1')"
+                    ></button>
+                  </div>
+                  <!--Edit section-->
+                </div>
+                <form>
+                  <div class="checkout-details">
+                    <div class="d-flex flex-row gap-16 padding-B-16">
+                      <div class="w-6-12">
+                        <label class="label asterisk">First Name</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter First Name"
+                        />
+                      </div>
+                      <div class="w-6-12">
+                        <label class="label asterisk">Last Name</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Last Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="padding-B-16">
+                      <label class="label asterisk">Email ID</label>
+                      <input
+                        class="text-input"
+                        type="text"
+                        placeholder="Enter Email Address"
+                      />
+                    </div>
+                    <div class="padding-B-16">
+                      <label class="label asterisk">Mobile Number</label>
+                      <input
+                        class="text-input"
+                        type="text"
+                        placeholder="Enter Phone Number"
+                      />
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-primary continueBtn"
+                        onclick="toggleHighlight('checkoutstep1')"
+                      >
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                  <!--Account details tile-->
+                  <div class="account-details-tile margin-T-12 in-active-tile">
+                    <h6 class="padding-B-12">Olivia Kurl</h6>
+                    <div class="d-flex item-center gap-24">
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-mail"></span
+                        ><span>olivia.kurl@metlife.com</span>
+                      </div>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-phone"></span
+                        ><span>+1-508 922-6032</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- / Account details tile-->
+                </form>
+              </div>
+              <!--/ div steps inner -->
+            </div>
+          </div>
+          <!--/ div step 1-->
+
+          <!--div step 2-->
+          <div class="checkout-form" id="checkoutstep2">
+            <div class="d-flex flex-row gap-24">
+              <div>
+                <div class="checkout-list">
+                  <h5><span>2</span></h5>
+                </div>
+              </div>
+              <!--div steps inner-->
+              <div class="w-full">
+                <div class="d-flex item-center justify-between">
+                  <div>
+                    <h5>Customer Details</h5>
+                    <p>Customer Details to whom the order will be delivered</p>
+                  </div>
+                  <!--Edit section-->
+                  <div class="edit-details d-flex item-center gap-24">
+                    <a
+                      class="text-link"
+                      onclick="toggleHighlight('checkoutstep2')"
+                      >Edit</a
+                    ><button
+                      type="button"
+                      class="cs-icon-chevron-up down-chevrons"
+                      onclick="downChevrons('checkoutstep2')"
+                    ></button>
+                  </div>
+                  <!--Edit section-->
+                </div>
+                <form>
+                  <div class="checkout-details 2">
+                    <div class="padding-B-16">
+                      <label class="label asterisk">Company Name</label>
+                      <input class="text-input" type="text" value="Metlife" />
+                    </div>
+                    <div class="padding-B-16">
+                      <label class="label asterisk">Street Address</label>
+                      <input
+                        class="text-input"
+                        type="text"
+                        value="132 Turnpike Road"
+                      />
+                    </div>
+                    <div class="padding-B-16">
+                      <label class="label asterisk"
+                        >Suite/Apt/Unit (if applicable)</label
+                      >
+                      <input class="text-input" type="text" value="Suite 300" />
+                    </div>
+                    <div class="d-flex flex-row gap-16 padding-B-16">
+                      <div class="w-6-12">
+                        <label class="label asterisk">City</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          value="Southborough"
+                        />
+                      </div>
+                      <div class="w-6-12">
+                        <label class="label asterisk"
+                          >State/Province/Region</label
+                        >
+                        <input
+                          class="text-input"
+                          type="text"
+                          value="Southborough"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row gap-16 padding-B-16">
+                      <div class="w-6-12">
+                        <label class="label asterisk">Country</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          value="United States"
+                        />
+                      </div>
+                      <div class="w-6-12">
+                        <label class="label asterisk">Postal/ZIP Code</label>
+                        <input class="text-input" type="text" value="01772" />
+                      </div>
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-primary continueBtn"
+                        onclick="toggleHighlight('checkoutstep2')"
+                      >
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                  <!--Customer details tile-->
+                  <div class="in-active-tile margin-T-12">
+                    <h6 class="padding-B-12">Olivia Kurl</h6>
+                    <div class="body-text">
+                      132 Turnpike Road, Suite 300<br />Southborough, MA,
+                      01772<br />United States
+                    </div>
+                  </div>
+                  <!-- / Customer details tile-->
+                </form>
+              </div>
+              <!--/ div steps inner -->
+            </div>
+          </div>
+          <!--/ div step 2-->
+
+          <!--div step 3-->
+          <div class="checkout-form" id="checkoutstep3">
+            <div class="d-flex flex-row gap-24">
+              <div>
+                <div class="checkout-list">
+                  <h5><span>3</span></h5>
+                </div>
+              </div>
+              <!--div steps inner-->
+              <div class="w-full">
+                <div class="d-flex item-center justify-between">
+                  <div>
+                    <h5>Billing and Shipping Address</h5>
+                    <p>Shipping address where the order will be delivered</p>
+                  </div>
+                  <!--Edit section-->
+                  <div class="edit-details d-flex item-center gap-24">
+                    <a
+                      class="text-link"
+                      onclick="toggleHighlight('checkoutstep3')"
+                      >Edit</a
+                    ><button
+                      type="button"
+                      class="cs-icon-chevron-up down-chevrons"
+                      onclick="downChevrons('checkoutstep3')"
+                    ></button>
+                  </div>
+                  <!--Edit section-->
+                </div>
+                <form>
+                  <div class="checkout-details 1">
+                    <h5 class="padding-B-12">Billing Address</h5>
+                    <!--Begin billing address block-->
+                    <div class="billing-address-block">
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Company Name</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Company Name"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Street Address</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Street Address"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk"
+                          >Suite/Apt/Unit (if applicable)</label
+                        >
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Suite"
+                        />
+                      </div>
+                      <div class="d-flex flex-row gap-16 padding-B-16">
+                        <div class="w-6-12">
+                          <label class="label asterisk">City</label>
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter City"
+                          />
+                        </div>
+                        <div class="w-6-12">
+                          <label class="label asterisk"
+                            >State/Province/Region</label
+                          >
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter State"
+                          />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-16 padding-B-16">
+                        <div class="w-6-12">
+                          <label class="label asterisk">Country</label>
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter Country"
+                          />
+                        </div>
+                        <div class="w-6-12">
+                          <label class="label asterisk">Postal/ZIP Code</label>
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter Enter ZIP Code"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!--Begin billing address block-->
+                    <h5 class="padding-T-24 padding-B-12">Billing Contact</h5>
+                    <!--Begin billing contact block-->
+                    <div class="billing-contact-block">
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Email Address</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Email Address"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Phone Number</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Phone Number"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Location</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Location"
+                        />
+                      </div>
+                    </div>
+                    <!-- / Begin billing contact block-->
+                    <div class="cs-sep margin-T-24 margin-B-24"></div>
+                    <!--Begin Shipping Address block-->
+                    <div class="shipping-address-block">
+                      <h5 class="padding-B-12">Shipping Address</h5>
+                      <div class="padding-B-12 d-flex item-center">
+                        <input
+                          type="checkbox"
+                          id="shipping-address"
+                          name="shipping-address1"
+                          value="shipping-address"
+                        />
+                        Shipping address is same as of billing address
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Company Name</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Company Name"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Street Address</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Street Address"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk"
+                          >Suite/Apt/Unit (if applicable)</label
+                        >
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Suite"
+                        />
+                      </div>
+                      <div class="d-flex flex-row gap-16 padding-B-16">
+                        <div class="w-6-12">
+                          <label class="label asterisk">City</label>
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter City"
+                          />
+                        </div>
+                        <div class="w-6-12">
+                          <label class="label asterisk"
+                            >State/Province/Region</label
+                          >
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter State"
+                          />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-16 padding-B-16">
+                        <div class="w-6-12">
+                          <label class="label asterisk">Country</label>
+                          <select id="country">
+                            <option>List 1</option>
+                            <option>List 2</option>
+                          </select>
+                        </div>
+                        <div class="w-6-12">
+                          <label class="label asterisk">Postal/ZIP Code</label>
+                          <input
+                            class="text-input"
+                            type="text"
+                            placeholder="Enter Enter ZIP Code"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ Shipping Address block-->
+                    <!--Begin shipping contact block-->
+                    <div class="shipping-contact-block">
+                      <h5 class="padding-B-12">Shipping Contact</h5>
+                      <div class="padding-B-12 d-flex item-center">
+                        <input
+                          type="checkbox"
+                          id="shipping-address"
+                          name="shipping-address1"
+                          value="shipping-address"
+                        />
+                        Shipping contact is same as of billing contact
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Email Address</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Email Address"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Phone Number</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Phone Number"
+                        />
+                      </div>
+                      <div class="padding-B-16">
+                        <label class="label asterisk">Location</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Location"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-primary continueBtn"
+                        onclick="toggleHighlight('checkoutstep3')"
+                      >
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                  <!--Billing shipping details tile-->
+                  <div class="in-active-tile padding-T-24">
+                    <div class="d-grid grid-cols-2 gap-24">
+                      <div>
+                        <div class="key padding-B-12">Billing Address</div>
+                        <h6 class="padding-B-12">Metlife</h6>
+                        <div class="body-text">
+                          132 Turnpike Road, Suite 300<br />Southborough, MA,
+                          01772<br />United States
+                        </div>
+                      </div>
+                      <div>
+                        <div class="key padding-B-12">Billing Contact</div>
+                        <h6 class="padding-B-12">Olivia Kurl</h6>
+                        <div class="body-text">
+                          olivia.kurl@metlife.com<br />+1-508 922-6032<br />United
+                          States
+                        </div>
+                      </div>
+                      <div>
+                        <div class="key padding-B-12">Billing Address</div>
+                        <h6 class="padding-B-12">Metlife</h6>
+                        <div class="body-text">
+                          132 Turnpike Road, Suite 300<br />Southborough, MA,
+                          01772<br />United States
+                        </div>
+                      </div>
+                      <div>
+                        <div class="key padding-B-12">Billing Address</div>
+                        <h6 class="padding-B-12">Olivia Kurl</h6>
+                        <div class="body-text">
+                          olivia.kurl@metlife.com<br />+1-508 922-6032<br />United
+                          States
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- / Billing shipping details tile-->
+                </form>
+              </div>
+              <!--/ div steps inner -->
+            </div>
+          </div>
+          <!--/ div step 3-->
+
+          <!--div step 4-->
+          <div class="checkout-form" id="checkoutstep4">
+            <div class="d-flex flex-row gap-24">
+              <div>
+                <div class="checkout-list">
+                  <h5><span>4</span></h5>
+                </div>
+              </div>
+              <!--div steps inner-->
+              <div class="w-full">
+                <div class="d-flex item-center justify-between">
+                  <div>
+                    <h5>Payment Method</h5>
+                    <p>Payment method to initiate your trial</p>
+                  </div>
+                  <!--Edit section-->
+                  <div class="edit-details d-flex item-center gap-24">
+                    <a
+                      class="text-link"
+                      onclick="toggleHighlight('checkoutstep4')"
+                      >Edit</a
+                    ><button
+                      type="button"
+                      class="cs-icon-chevron-up down-chevrons"
+                      onclick="downChevrons('checkoutstep4')"
+                    ></button>
+                  </div>
+                  <!--Edit section-->
+                </div>
+                <form>
+                  <div class="checkout-details">
+                    <div class="d-flex flex-row item-center gap-12 margin-B-16"><span class="body-text font-700">Cards</span><img alt="cards" src="/assets/images/cards-img.png"/></div>
+                    <div class="d-flex flex-row gap-16 padding-B-16">
+                      <div>
+                        <label class="label asterisk">Card Number</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="Enter Card Number"
+                        />
+                      </div>
+                      <div>
+                        <label class="label asterisk">Card Expiry</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="MM/YYYY"
+                        />
+                      </div>
+                      <div>
+                        <label class="label asterisk">CVV</label>
+                        <input
+                          class="text-input"
+                          type="text"
+                          placeholder="CVV"
+                        />
+                      </div>
+                    </div>
+                    <div class="padding-B-16">
+                      <label class="label asterisk">Name as on Card</label>
+                      <input
+                        class="text-input"
+                        type="text"
+                        placeholder="Enter Full Name here"
+                      />
+                    </div>
+                    <div class="padding-B-12 d-flex item-center">
+                        <input type="checkbox" id="save-card" name="shipping-address1" value="save-card">
+                        <span class="body-text">Save this card for quick checkout process</span>
+                      </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-primary continueBtn"
+                        onclick="toggleHighlight('checkoutstep4')"
+                      >
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                  <!--Account details tile-->
+                  <div class="margin-T-12 in-active-tile">
+                    <h5>Bank of USA</h5>
+                    <span class="body-text">**9793 |  Olivia Kurl</span>
+                  </div>
+                  <!-- / Account details tile-->
+                </form>
+              </div>
+              <!--/ div steps inner -->
+            </div>
+          </div>
+          <!--/ div step 4-->
+        </div>
+
+        <div>
+          <!--div Order summary-->
+          <div class="order-summary">
+            <div class="d-flex flex-row justify-between padding-B-24">
+              <h4>Your Trial Order Summary</h4>
+              <a class="text-link" href="javascript:void(0)">Edit</a>
+            </div>
+            <table>
+              <tr>
+                <td><img src="assets/images/temp-img.jpg" /></td>
+                <td>
+                  <div class="product-info">
+                    <h6>Meraki Multi-level WiFi Product Group</h6>
+                    <p>MR44-HW</p>
+                    <a class="text-link text-change font-400" onclick="toggleActive()"
+                      >[+] Show Product Details</a>
+                    <!--Hidden product-->
+                    <div class="show-more-details">
+                      <div class="d-flex margin-T-12">
+                        <div><img src="assets/images/icons/dna.svg"></div>
+                        <div>
+                            <div class="d-flex justify-between">
+                                <div><span class="body-text">Wireless Cisco DNA On-Perm Essential</span></div>
+                                <div><span class="body-text font-500 text-right">10</span></div>
+                            </div>
+                            <div class="d-flex justify-between">
+                                <div><span class="key">NX-SUB-E</span></div>
+                                <div><span class="key text-right">USD 6,000.00</span></div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- / Hidden product-->
+                </td>
+                <td>
+                  <h6>10</h6>
+                </td>
+              </tr>
+            </table>
+            <hr class="margin-TB-18" />
+            <table>
+              <tr>
+                <td>
+                  <h6 class="font-400">Subtotal</h6>
+                </td>
+                <td class="text-right">
+                  <h6 class="font-400">USD 14,000.00</h6>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <p class="padding-T-12">
+                    Your Trial order is valid for 90 days once the order is
+                    shipped
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <hr class="margin-TB-18" />
+            <table>
+              <tr>
+                <td class="padding-B-24">
+                  <h4>Your total today</h4>
+                </td>
+                <td class="text-right">
+                  <h4>0.00</h4>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button class="btn btn-primary w-full" onclick="location.href='your-cart-empty.html'">
+                    Share with Customer
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <div class="alert-section alert-warning margin-T-12"><span><input type="checkbox" id="agreed-terms" name="agreed-terms1" value="agreed-terms"></span><span>I agree to cisco's subscription and cancellation terms and <a href="javascript:void(0)">Terms of Use</a></span></div>
+            <div class="d-flex gap-12 margin-T-12">
+                <button class="btn btn-secondary w-full">Decline</button>
+                <button class="btn btn-primary w-full" onclick="location.href='my-trials.html'">Accept</button>
+            </div>
+          </div>
+          <!--/ div Order summary--> 
+        </div>
+      </div>
+      <!--/ div flex row-->
+    </div>
+    <!--/ div wrapper-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/drawer.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

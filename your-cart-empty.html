@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Trial Order : Cart Empty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/styles/global.css">
+</head>
+<body>
+    <!--div wrapper-->
+    <div class="wrapper">
+        <!--div page heading-->
+        <div class="cart-page-heading">
+            <h1>Your Cart</h1>
+            <p>Review and make adjustments to your cart</p>
+        </div>
+        <!--/ div page heading-->
+        <div class="d-flex flex-row gap-24">
+            
+            <div class="w-2-3 ">
+                <!--div empty cart-->
+                <div class="empty-cart">
+                <img width="230" src="/assets/images/empty-state.svg"/>
+                <h3>Add Products to configure</h3>
+                <p>Search and configure the product of your choice.</p>
+                <a class="btn btn-primary" href="#search-product" uk-toggle>Search Products</a>
+                 </div>
+                 <!--/ div empty cart-->
+            </div>
+            
+            <div>
+                <!--div order summary-->
+                <div class="w-1-3 order-summary">
+                <div class="d-flex flex-row justify-between padding-B-24">
+                    <h4>Your Trial Order Summary</h4>
+                </div>
+                <table>
+                    <tr>
+                        <td><h6 class="font-400">Items (0)</h6></td>
+                        <td class="text-right"><h6 class="font-400">USD 0,000.00</h6></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p class="padding-T-12">Your Trial order is valid for 90 days once the order is shipped</p></td>
+                    </tr>
+                </table>
+                <hr class="margin-TB-18" />
+                <table>
+                    <tr>
+                        <td><h4>Your total today</h4></td>
+                        <td class="text-right"><h4>0.00</h4></td>
+                    </tr>
+                    <!-- <tr>
+                        <td colspan="2">
+                            <button class="btn btn-primary w-full" onclick="location.href='checkout.html'">Proceed to Checkout</button>
+                        </td>
+                    </tr> -->
+                </table>
+            </div>
+        <!--/ div order summary-->    
+        </div>
+            
+        </div>
+    </div>
+    <!--/ div wrapper-->
+
+<!--div modal window-->
+    <div id="search-product" uk-modal>
+        <div class="uk-modal-dialog">
+        <h3 class="text-center padding-TB-34">Search and Add products <br/>
+            to your cart</h3>
+            <div class="search-lg relative-position"><input type="text" placeholder="Search Products" />
+            <div class="search-result-autocomplete">
+                <table>
+                    <tr>
+                        <th>SKU</th>
+                        <th></th>
+                        <th>Product Family</th>
+                        <th>List Price (USD)</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="product-sku-name font-500">MR44-HW</div>
+                                <div class="product-sku-des">Meraki WiFi-7, Ready to Go</div>
+                            </td>
+                            <td><a class="guide-me-link" href="your-cart-items.html">Guide Me</a></td>
+                            <td>Wireless</td>
+                            <td>1,400</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-sku-name font-500">MR57-HW</div>
+                                <div class="product-sku-des">WiFi-7 with Multigigabit Ethernet</div>
+                            </td>
+                            <td><a class="guide-me-link" href="your-cart-items.html">Guide Me</a></td>
+                            <td>Wireless</td>
+                            <td>1,450</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-sku-name font-500">Catalyst-9136</div>
+                                <div class="product-sku-des">Cisco Catalyst, Configurable WiFi</div>
+                            </td>
+                            <td><a class="guide-me-link" href="your-cart-items.html">Guide Me</a></td>
+                            <td>Wireless</td>
+                            <td>2,100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="product-search-find">Can't Find? Search and find products and solutions.</div>
+            </div>
+            </div>
+        </div>
+    </div>
+<!--/div modal window-->    
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/js/uikit.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/drawer.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
