@@ -1,9 +1,9 @@
 ::-moz-placeholder {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 ::placeholder {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .badge {
@@ -17,22 +17,22 @@
   text-align: center;
 }
 .badge.new-request {
-  background-color: #FFE6BD;
+  background-color: #ffe6bd;
 }
 .badge.extension-request {
-  background-color: #FFE6BD;
+  background-color: #ffe6bd;
 }
 .badge.expired-request {
-  background-color: #FFDAD8;
+  background-color: #ffdad8;
 }
 .badge.active-request {
-  background-color: #DDF2D8;
+  background-color: #ddf2d8;
 }
 .badge.extended-request {
-  background-color: #DDF2D8;
+  background-color: #ddf2d8;
 }
 .badge.included-essentials {
-  background-color: #D7EAFC;
+  background-color: #d7eafc;
 }
 
 hr {
@@ -188,6 +188,10 @@ hr {
   gap: 8px;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
 .w-1-3 {
   width: 33.333333%;
 }
@@ -244,7 +248,7 @@ hr {
   background: #fff;
 }
 .search-result-autocomplete table th {
-  background-color: #F4F5F6;
+  background-color: #f4f5f6;
   text-align: left;
   font-size: 14px;
   font-weight: 700;
@@ -261,8 +265,8 @@ hr {
 }
 .search-result-autocomplete .product-search-find {
   text-align: center;
-  color: #0070D2;
-  background: #EBEBEB;
+  color: #0070d2;
+  background: #ebebeb;
   padding: 10px 0;
 }
 
@@ -331,4 +335,16 @@ hr {
 
 .hide-more-details {
   display: block;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
 }/*# sourceMappingURL=misc.css.map */
