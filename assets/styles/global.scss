@@ -59,6 +59,15 @@ a {
 .cs-sub-header {
   background: url(/assets/images/header-bg.png) no-repeat top left;
   padding: 26px 40px;
+  .remaining-days ul li.days-count span {
+    background: #d6d6d6;
+  }
+  .remaining-days ul.days-active li.days-count:before {
+    background: linear-gradient(90deg, #0070d2 0%, #d6d6d6 90.68%);
+  }
+  .remaining-days ul.days-active li.default span {
+    background: #d6d6d6;
+  }
 }
 
 .page-header {
@@ -143,7 +152,6 @@ a {
 .cs-tabs-conatiner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -233,13 +241,11 @@ a {
 
 .key {
   font-size: 12px;
-  font-weight: 500;
   line-height: 16px;
   color: #606162;
 }
 .value {
   font-size: 14px;
-  font-weight: 500;
   line-height: 20px;
   color: #1b1c1d;
 }
