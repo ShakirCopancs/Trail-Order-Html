@@ -1,80 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Trial Order : Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="assets/styles/global.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trial Order : Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/global.css" />
+  </head>
+  <body>
     <div class="cs-sub-header">
-        <section class="header-section">
-            <div class="bread-crumbs"><span class="cs-icon-home-filled"></span>123</div>
-        </section>
-        <div class="d-flex justify-between item-center padding-B-24">
-            <h3>Cisco Meraki Wifi 7 for Metlife</h3>
-            <div class="d-flex gap-12"><button class="btn btn-secondary">Return</button><button class="btn btn-secondary">Extend Trial</button><button class="btn btn-primary">Request a Quote</button></div>
+      <section class="header-section">
+        <div class="bread-crumbs"><i class="cs-icon-home-filled"></i>123</div>
+      </section>
+      <div class="d-flex justify-between item-center padding-B-24">
+        <h3>Cisco Meraki Wifi 7 for Metlife</h3>
+        <div class="d-flex gap-12">
+          <button class="btn btn-secondary">Return</button
+          ><button class="btn btn-secondary">Extend Trial</button
+          ><button class="btn btn-primary">Request a Quote</button>
         </div>
-        <!--sub header details-->
-        <div class="d-flex item-center justify-between">
-            <div>
-                <div class="key ellipsis">Customer Info</div>
-                <div class="value"><a class="text-link" href="javascript:void(0)">Metlife</a></div>
-            </div>
-            <div>
-                <div class="key ellipsis">Trial Order ID</div>
-                <div class="value">93159802</div>
-            </div>
-            <div class="start-expiry-date">
-                <div>
-                     <div class="key ellipsis">Start Date</div>
-                     <div class="value">Jun 15, 2024</div>
-                </div> 
-                <div class="remaining-days">
-                     <ul class="days-active">
-                         <li class="active"><span class="cs-icon-check"></span></li>
-                         <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>88 days remaining</span></span></li>
-                         <li class="default"><span></span></li>
-                     </ul>
-                </div>
-                <div>
-                 <div class="key ellipsis">Expiry Date</div>
-                 <div class="value">Sep 15, 2024</div>
-            </div> 
-             </div>
-             <div>
-                <div class="key ellipsis">Trial Value</div>
-                <div class="value">USD 30,000</div>
-             </div>
-             <div>
-                <div class="key ellipsis">Trial Status</div>
-                <div class="badge active-request">Active</div>
-             </div>
-             <div>
-                <div class="key ellipsis">Tracking Numbers</div>
-                <div class="value"><a href="javascript:void(0)" class="text-link">3</a></div>
-             </div>
-             <div>
-                <div class="key ellipsis">Charges after Trial Expiry</div>
-                <div class="value">USD 15,000</div>
-             </div>
-             <div>
-                <div class="key ellipsis">Credit Card Charge Date</div>
-                <div class="value">Oct 10, 2024</div>
-             </div>
+      </div>
+      <!--sub header details-->
+      <div class="d-flex item-center justify-between">
+        <div>
+          <div class="key ellipsis">Customer Info</div>
+          <div class="value">
+            <a
+              class="text-link"
+              data-drawer-trigger
+              aria-controls="customer-info"
+              aria-expanded="false"
+              href="javascript:void(0)"
+              >Metlife</a
+            >
+          </div>
         </div>
-         <!-- / sub header details-->
+        <div>
+          <div class="key ellipsis">Trial Order ID</div>
+          <div class="value">93159802</div>
+        </div>
+        <div class="start-expiry-date">
+          <div>
+            <div class="key ellipsis">Start Date</div>
+            <div class="value">Jun 15, 2024</div>
+          </div>
+          <div class="remaining-days">
+            <ul class="days-active">
+              <li class="active"><span class="cs-icon-check"></span></li>
+              <li class="days-count">
+                <span class="days-left"
+                  ><span class="cs-icon-clock"></span
+                  ><span>88 days remaining</span></span
+                >
+              </li>
+              <li class="default"><span></span></li>
+            </ul>
+          </div>
+          <div>
+            <div class="key ellipsis">Expiry Date</div>
+            <div class="value">Sep 15, 2024</div>
+          </div>
+        </div>
+        <div>
+          <div class="key ellipsis">Trial Value</div>
+          <div class="value">USD 30,000</div>
+        </div>
+        <div>
+          <div class="key ellipsis">Trial Status</div>
+          <div class="badge active-request">Active</div>
+        </div>
+        <div>
+          <div class="key ellipsis">Tracking Numbers</div>
+          <div class="value">
+            <a
+              class="text-link"
+              data-drawer-trigger
+              aria-controls="trekking-info"
+              aria-expanded="false"
+              href="javascript:void(0)"
+              >3</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="key ellipsis">Charges after Trial Expiry</div>
+          <div class="value">USD 15,000</div>
+        </div>
+        <div>
+          <div class="key ellipsis">Credit Card Charge Date</div>
+          <div class="value">Oct 10, 2024</div>
+        </div>
+      </div>
+      <!-- / sub header details-->
     </div>
     <!-- container-->
-<div class="container">
+    <div class="container">
+      <!--div drawer-->
+      <!-- <a href="#" class="text-link" data-drawer-trigger aria-controls="help-me" aria-expanded="false">Help text</a> -->
+      <section
+        class="drawer drawer--right"
+        id="customer-info"
+        data-drawer-target
+      >
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper drawer__view-details drawer_w_1070">
+          <div class="drawer__header">
+            <h4>Customer Details</h4>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
+          </div>
+          <div class="drawer__content">
+            <div class="drawer-content-column">
+              <h5>Customer Details</h5>
+              <div class="details-column">
+                <div class="d-flex flex-row gap-24 padding-B-24 w-full">
+                  <div class="details-column-item account-details-tile">
+                    <span class="column-title">Address</span>
+                    <div class="margin-T-24 margin-B-24">
+                      <h6 class="column-heading">Metlife</h6>
+                      <div class="body-text fw-400">
+                        132 Turnpike Road, Suite 300<br />Southborough, MA,
+                        01772<br />United States
+                      </div>
+                    </div>
+                    <div class="customerId">
+                      <span class="d-flex gap-5"
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
+                      >
+                    </div>
+                  </div>
+                  <div class="details-column-item account-details-tile">
+                    <span class="column-title">Contact</span>
+                    <div class="margin-T-24 margin-B-24">
+                      <h6 class="column-heading">Olivia Kurl</h6>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-mail"></span
+                        ><span class="fw-400 lh-24"
+                          >olivia.kurl@turntable.com</span
+                        >
+                      </div>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-phone"></span
+                        ><span class="fw-400 lh-24">+1-508 922-6032</span>
+                      </div>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-location"></span
+                        ><span class="fw-400 lh-24">United States</span>
+                      </div>
+                    </div>
+                    <div class="customerId">
+                      <span class="d-flex gap-5"
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="drawer-content-column">
+              <h5>Shipping Details</h5>
+              <div class="details-column">
+                <div class="d-flex flex-row gap-24 padding-B-24 w-full">
+                  <div class="details-column-item account-details-tile">
+                    <span class="column-title">Address</span>
+                    <div class="margin-T-24 margin-B-24">
+                      <h6 class="column-heading">Metlife</h6>
+                      <div class="body-text fw-400">
+                        132 Turnpike Road, Suite 300<br />Southborough, MA,
+                        01772<br />United States
+                      </div>
+                    </div>
+                    <div class="customerId">
+                      <span class="d-flex gap-5"
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
+                      >
+                    </div>
+                  </div>
+                  <div class="details-column-item account-details-tile">
+                    <span class="column-title">Contact</span>
+                    <div class="margin-T-24 margin-B-24">
+                      <h6 class="column-heading">Gabriel</h6>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-mail"></span
+                        ><span class="fw-400 lh-24">gabrial@turntable.com</span>
+                      </div>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-phone"></span
+                        ><span class="fw-400 lh-24">+1-508 922-6032</span>
+                      </div>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-location"></span
+                        ><span class="fw-400 lh-24">United States</span>
+                      </div>
+                    </div>
+                    <div class="customerId">
+                      <span class="d-flex gap-5"
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ div drawer-->
 
-</div>
-<!--/ container-->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <!-- ------------- Trakking Drawer ----------- -->
+      <section
+        class="drawer drawer--right"
+        id="trekking-info"
+        data-drawer-target
+      >
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper drawer__view-details">
+          <div class="drawer__header">
+            <h4>Shipping and Tracking Details</h4>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
+          </div>
+          <div class="drawer__content">
+            <table class="table-trekking">
+              <thead>
+                <tr>
+                  <th>Shipment</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Tracking Numbers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Shipment 1</td>
+                  <td>MR44-HW</td>
+                  <td>2</td>
+                  <td>
+                    <a href="#" class="tracking-link">HKG43190345</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>MR76-HW</td>
+                  <td>5</td>
+                  <td>
+                    <a href="#" class="tracking-link">HKG43190348</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--/ container-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/drawer.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
