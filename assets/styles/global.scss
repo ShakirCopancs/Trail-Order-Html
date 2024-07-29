@@ -58,6 +58,17 @@ a {
 .cs-sub-header {
   background: url(/assets/images/header-bg.png) no-repeat top left;
   padding: 26px 40px;
+
+  .remaining-days ul li.days-count span {
+    background: #D6D6D6;
+  }
+  .remaining-days ul.days-active li.days-count:before{
+    background: linear-gradient(90deg, #0070D2 0%, #D6D6D6 90.68%);
+
+  }
+  .remaining-days ul.days-active li.default span {
+    background: #D6D6D6;
+  }
 }
 
 .page-header {
@@ -143,7 +154,6 @@ a {
 .cs-tabs-conatiner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -233,13 +243,11 @@ a {
 
 .key { 
   font-size: 12px;
-  font-weight: 500;
   line-height: 16px;
   color: #606162;
 }
 .value {
   font-size: 14px;
-  font-weight: 500;
   line-height: 20px;
   color: #1B1C1D;
 }
@@ -439,4 +447,55 @@ a {
 
 .checkout-details {
   padding-top: 1.5rem;
+}
+// Trial status page css
+.my-trails-container {
+  width: 1118px;
+  margin: 0 auto;
+}
+
+// Activity history
+.activity-history-section {
+  padding: 1.5rem;
+  background: #F4F5F6;
+  border-radius: 4px;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    &:last-child{
+      &::before{
+        display: none;
+      }  
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #8E8E8E;
+      height: 70%;
+      left: 5px;
+      top: 18px;
+
+    }
+  }
+  .activity-list-stepper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #8E8E8E;
+    padding: 1px;
+    border-radius: 10px;
+    top: 4px;
+    span{
+      background: #8E8E8E;
+      border: 2px solid #fff;
+      width: 9px;
+      height: 9px;
+      display: inline-block;
+      border-radius: 9px;
+    }
+  }
 }
