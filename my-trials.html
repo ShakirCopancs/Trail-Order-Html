@@ -8,27 +8,19 @@
   <link rel="stylesheet" href="assets/styles/global.css">
 </head>
 <body class="body-bg-gray">
-<div class="container">
-<!--div page header-->
-    <div class="page-header d-flex justify-between flex-row item-center">
-        <div><h2>At-A-Glance</h2></div>
-        <div class="date-picker gap-8"><span class="cs-icon-calendar"></span><span class="date-picker-val">Jun 10, 2024 to Jun 16, 2024</span></div>
+    <div class="text-center">
+        <img class="w-full" src="/assets/images/info-banner.jpg" alt="Never miss your trials"/>
     </div>
-    <!--/ div page header-->
-
-    <div class="d-flex justify-between flex-row">
-        <!--div dashboard content-->
-        <div style="width: 71.87%;">
+<div class="my-trails-container">
+    <h3 class="padding-T-40 text-center padding-B-16">My Trials</h3>
 <div class="tab-warpper">
     <!-- div tab-->
-  <input class="cs-tabs-radio" id="new" name="group" type="radio" checked>
-  <input class="cs-tabs-radio" id="all" name="group" type="radio">
+  <input class="cs-tabs-radio" id="all" name="group" type="radio" checked>
   <input class="cs-tabs-radio" id="active" name="group" type="radio">
   <input class="cs-tabs-radio" id="extension" name="group" type="radio">
   <input class="cs-tabs-radio" id="expired" name="group" type="radio">
-  <div class="cs-tabs-conatiner">
+  <div class="cs-tabs-conatiner justify-center">
  <div>
-    <label class="cs-tab" id="tab-new" for="new">New Request</label>
     <label class="cs-tab" id="tab-all" for="all">All</label>
     <label class="cs-tab" id="tab-active" for="active">Active</label>
     <label class="cs-tab" id="tab-extension" for="extension">Extension</label>
@@ -37,101 +29,46 @@
     <!-- / div tab-->
     </div>
   <div class="tab-panels">
-    <!--Begin new-->
-  <div class="panel-container" id="panel-new">
-        <div class="panel-body">
-            <div class="d-flex flex-row justify-between">
-            <div class="panel-section">
-                <div class="panel-head"><h2>Trail for Cisco Meraki Wifi 7</h2><span class="badge new-request">New Request</span></div>
-                <div class="panel-details d-flex flex-row justify-between">
-                <div>
-                    <div class="key">Requested on</div>
-                    <div class="value">Jul 5, 2024</div>
-                </div>
-                <div>
-                    <div class="key">Requested on</div>
-                    <div class="value">Jul 5, 2024</div>
-                </div>
-                <div>
-                    <div class="key">Customer</div>
-                    <div class="value">Metlife</div>
-                </div>
-                <div>
-                    <div class="key">Location</div>
-                    <div class="value">Southborough</div>
-                </div>
-                <div>
-                    <div class="key">Contact</div>
-                    <div class="value">Olivia Kurl</div>
-                </div>
-            </div>
-            </div>
-             </div>
-        </div>
-        <div class="panel-body">
-            <div class="d-flex flex-row justify-between">
-            <div class="panel-section">
-                <div class="panel-head"><h2>Trial for Catalyst 9300L-M</h2><span class="badge new-request">New Request</span></div>
-                <div class="panel-details d-flex flex-row justify-between">
-                <div>
-                    <div class="key">Requested on</div>
-                    <div class="value">Jul 5, 2024</div>
-                </div>
-                <div>
-                    <div class="key">Requested on</div>
-                    <div class="value">Jul 5, 2024</div>
-                </div>
-                <div>
-                    <div class="key">Customer</div>
-                    <div class="value">Metlife</div>
-                </div>
-                <div>
-                    <div class="key">Location</div>
-                    <div class="value">Southborough</div>
-                </div>
-                <div>
-                    <div class="key">Contact</div>
-                    <div class="value">Olivia Kurl</div>
-                </div>
-            </div>
-            </div>
-             </div>
-        </div>
-        <div class="panel-body">
-            <div class="d-flex flex-row justify-between">
-            <div class="panel-section">
-                <div class="panel-head"><h2>Trial for Cloud-based network platform </h2><span class="badge new-request">New Request</span></div>
-                <div class="panel-details d-flex flex-row justify-between">
-                <div>
-                    <div class="key">Requested on</div>
-                    <div class="value">Jul 5, 2024</div>
-                </div>
-                <div>
-                    <div class="key">Requested on</div>
-                    <div class="value">Jul 5, 2024</div>
-                </div>
-                <div>
-                    <div class="key">Customer</div>
-                    <div class="value">Metlife</div>
-                </div>
-                <div>
-                    <div class="key">Location</div>
-                    <div class="value">Southborough</div>
-                </div>
-                <div>
-                    <div class="key">Contact</div>
-                    <div class="value">Olivia Kurl</div>
-                </div>
-            </div>
-            </div>
-             </div>
-        </div>
-  </div>
+
   <!--Begin All-->
   <div class="panel-container" id="panel-all">
     <div class="panel-body">
         <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
+        <div class="panel-section w-full">
+            <div class="panel-head"><h2>Trail for Catalyst 9300L-M switch</h2><span class="badge active-request">Active</span></div>
+            <div class="panel-details-inner d-flex flex-row justify-between">
+            <div>
+                <div class="key">Trial ID</div>
+                <div class="value">91276890</div>
+            </div>
+            <div>
+                <div class="key">Trial Value</div>
+                <div class="value">USD 30,000</div>
+            </div>
+            <div class="start-expiry-date">
+               <div>
+                    <div class="key">Start Date</div>
+                    <div class="value">Jun 10, 2024</div>
+               </div> 
+               <div class="remaining-days">
+                <ul class="days-extension">
+                    <li class="active"><span class="cs-icon-check"></span></li>
+                    <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>8 days remaining</span></span></li>
+                    <li class="default"><span></span></li>
+                </ul>
+           </div>
+               <div>
+                <div class="key">Expiry Date</div>
+                <div class="value">Sep 10, 2024</div>
+           </div> 
+            </div>
+        </div>
+        </div>
+         </div>
+    </div>
+    <div class="panel-body">
+        <div class="d-flex flex-row justify-between">
+        <div class="panel-section w-full">
             <div class="panel-head"><h2>Trail for Cisco Meraki Wifi 7</h2><span class="badge active-request">Active</span></div>
             <div class="panel-details-inner d-flex flex-row justify-between">
             <div>
@@ -139,12 +76,8 @@
                 <div class="value">93159802</div>
             </div>
             <div>
-                <div class="key">Customer</div>
-                <div class="value">Metlife</div>
-            </div>
-            <div>
                 <div class="key">Trial Value</div>
-                <div class="value">USD 21,789</div>
+                <div class="value">USD 30,000</div>
             </div>
             <div class="start-expiry-date">
                <div>
@@ -167,40 +100,70 @@
         </div>
          </div>
     </div>
-   <div class="panel-body">
+    <div class="panel-body">
         <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
-            <div class="panel-head"><h2>Trail for Meraki Wifi 7 for Enterprise</h2><span class="badge expired-request">Expired</span></div>
+        <div class="panel-section w-full">
+            <div class="panel-head"><h2>Trail for Catalyst 9300L-M switch</h2><span class="badge active-request">Active</span></div>
+            <div class="panel-details-inner d-flex flex-row justify-between">
+            <div>
+                <div class="key">Trial ID</div>
+                <div class="value">91276890</div>
+            </div>
+            <div>
+                <div class="key">Trial Value</div>
+                <div class="value">USD 30,000</div>
+            </div>
+            <div class="start-expiry-date">
+               <div>
+                    <div class="key">Start Date</div>
+                    <div class="value">Jun 10, 2024</div>
+               </div> 
+               <div class="remaining-days">
+                    <ul class="days-active">
+                        <li class="active"><span class="cs-icon-check"></span></li>
+                        <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>83 days remaining</span></span></li>
+                        <li class="default"><span></span></li>
+                    </ul>
+               </div>
+               <div>
+                <div class="key">Expiry Date</div>
+                <div class="value">Sep 10, 2024</div>
+           </div> 
+            </div>
+        </div>
+        </div>
+         </div>
+    </div>
+    <div class="panel-body">
+        <div class="d-flex flex-row justify-between">
+        <div class="panel-section w-full">
+            <div class="panel-head"><h2>Trail for Cloud-based network platform</h2><span class="badge expired-request">Expired</span></div>
             <div class="panel-details-inner d-flex flex-row justify-between">
             <div>
                 <div class="key">Trial ID</div>
                 <div class="value">93276589</div>
             </div>
             <div>
-                <div class="key">Customer</div>
-                <div class="value">Amazon</div>
-            </div>
-            <div>
                 <div class="key">Trial Value</div>
-                <div class="value">USD 21,908</div>
+                <div class="value">USD 24,124</div>
             </div>
             <div class="start-expiry-date">
-               <div>
-                    <div class="key">Start Date</div>
-                    <div class="value">Apr 10, 2024</div>
-               </div> 
-               <div class="remaining-days">
-                    <ul class="days-expired">
-                        <li class="active"><span class="cs-icon-check"></span></li>
-                        <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>Expired</span></span></li>
-                        <li class="default"><span class="cs-icon-warning-outline"></span></li>
-                    </ul>
-               </div>
-               <div>
-                <div class="key">Expiry Date</div>
-                <div class="value">Jun 10, 2024</div>
-           </div> 
-            </div>
+                <div>
+                     <div class="key">Start Date</div>
+                     <div class="value">Apr 10, 2024</div>
+                </div> 
+                <div class="remaining-days">
+                     <ul class="days-expired">
+                         <li class="active"><span class="cs-icon-check"></span></li>
+                         <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>Expired</span></span></li>
+                         <li class="default"><span class="cs-icon-warning-outline"></span></li>
+                     </ul>
+                </div>
+                <div>
+                 <div class="key">Expiry Date</div>
+                 <div class="value">Jun 10, 2024</div>
+            </div> 
+             </div>
         </div>
         </div>
          </div>
@@ -210,7 +173,7 @@
   <div class="panel-container" id="panel-active">
     <div class="panel-body">
         <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
+        <div class="panel-section w-full">
             <div class="panel-head"><h2>Trail for Cisco Meraki Wifi 7</h2><span class="badge active-request">Active</span></div>
             <div class="panel-details-inner d-flex flex-row justify-between">
             <div>
@@ -218,12 +181,8 @@
                 <div class="value">93159802</div>
             </div>
             <div>
-                <div class="key">Customer</div>
-                <div class="value">Metlife</div>
-            </div>
-            <div>
                 <div class="key">Trial Value</div>
-                <div class="value">USD 21,789</div>
+                <div class="value">USD 30,000</div>
             </div>
             <div class="start-expiry-date">
                <div>
@@ -246,172 +205,83 @@
         </div>
          </div>
     </div>
-    <div class="panel-body">
-        <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
-            <div class="panel-head"><h2>Trial for Cisco Catalyst 9163E</h2><span class="badge active-request">Active</span><span class="badge extension-request">Extension Requested</span></div>
-            <div class="panel-details-inner d-flex flex-row justify-between">
-            <div>
-                <div class="key">Trial ID</div>
-                <div class="value">92390921</div>
-            </div>
-            <div>
-                <div class="key">Customer</div>
-                <div class="value">Infinx</div>
-            </div>
-            <div>
-                <div class="key">Trial Value</div>
-                <div class="value">USD 12,000</div>
-            </div>
-            <div class="start-expiry-date">
-               <div>
-                    <div class="key">Start Date</div>
-                    <div class="value">Apr 20, 2024</div>
-               </div> 
-               <div class="remaining-days">
-                    <ul class="days-active">
-                        <li class="active"><span class="cs-icon-check"></span></li>
-                        <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>73 days remaining</span></span></li>
-                        <li class="default"><span></span></li>
-                    </ul>
-               </div>
-               <div>
-                <div class="key">Expiry Date</div>
-                <div class="value">Jun 20, 2024</div>
-           </div> 
-            </div>
-        </div>
-        </div>
-         </div>
-    </div>
-    <div class="panel-body">
-        <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
-            <div class="panel-head"><h2>Trial for Cisco Meraki Wifi 7</h2><span class="badge active-request">Active</span><span class="badge extended-request">Extended</span></div>
-            <div class="panel-details-inner d-flex flex-row justify-between">
-            <div>
-                <div class="key">Trial ID</div>
-                <div class="value">92390921</div>
-            </div>
-            <div>
-                <div class="key">Customer</div>
-                <div class="value">Raytheon</div>
-            </div>
-            <div>
-                <div class="key">Trial Value</div>
-                <div class="value">USD 24,908</div>
-            </div>
-            <div class="start-expiry-date">
-               <div>
-                    <div class="key">Start Date</div>
-                    <div class="value">Apr 10, 2024</div>
-               </div> 
-               <div class="remaining-days">
-                    <ul class="days-extension">
-                        <li class="active"><span class="cs-icon-check"></span></li>
-                        <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>8 days remaining</span></span></li>
-                        <li class="default"><span></span></li>
-                    </ul>
-               </div>
-               <div>
-                <div class="key">Expiry Date</div>
-                <div class="value">Jun 25, 2024</div>
-           </div> 
-            </div>
-        </div>
-        </div>
-         </div>
-    </div>
   </div>
   <!--Begin Extension-->
   <div class="panel-container" id="panel-extension">
-    <div class="panel-body">
-        <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
-            <div class="panel-head"><h2>Trial for Meraki Wifi 6</h2><span class="badge extension-request">Extension Requested</span></div>
-            <div class="panel-details-inner d-flex flex-row justify-between">
-            <div>
-                <div class="key">Trial ID</div>
-                <div class="value">92390921</div>
-            </div>
-            <div>
-                <div class="key">Customer</div>
-                <div class="value">Brightstar</div>
-            </div>
-            <div>
-                <div class="key">Trial Value</div>
-                <div class="value">USD 21,124</div>
-            </div>
-            <div class="start-expiry-date">
-               <div>
-                    <div class="key">Start Date</div>
-                    <div class="value">Apr 15, 2024</div>
-               </div> 
-               <div class="remaining-days">
-                    <ul class="days-expired">
-                        <li class="active"><span class="cs-icon-check"></span></li>
-                        <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>Expired</span></span></li>
-                        <li class="default"><span class="cs-icon-warning-outline"></span></li>
-                    </ul>
-               </div>
-               <div>
-                <div class="key">Expiry Date</div>
-                <div class="value">Jun 15, 2024</div>
-           </div> 
-            </div>
+<div class="panel-body">
+    <div class="d-flex flex-row justify-between">
+    <div class="panel-section w-full">
+        <div class="panel-head"><h2>Trail for Cloud-based network platform</h2><span class="badge extension-request">Extension Requested</span></div>
+        <div class="panel-details-inner d-flex flex-row justify-between">
+        <div>
+            <div class="key">Trial ID</div>
+            <div class="value">93276589</div>
         </div>
+        <div>
+            <div class="key">Trial Value</div>
+            <div class="value">USD 24,124</div>
         </div>
+        <div class="start-expiry-date">
+            <div>
+                 <div class="key">Start Date</div>
+                 <div class="value">Apr 10, 2024</div>
+            </div> 
+            <div class="remaining-days">
+                 <ul class="days-expired">
+                     <li class="active"><span class="cs-icon-check"></span></li>
+                     <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>Expired</span></span></li>
+                     <li class="default"><span class="cs-icon-warning-outline"></span></li>
+                 </ul>
+            </div>
+            <div>
+             <div class="key">Expiry Date</div>
+             <div class="value">Jun 10, 2024</div>
+        </div> 
          </div>
     </div>
+    </div>
+     </div>
+</div>
   </div>
   <!--Begin Expired-->
   <div class="panel-container" id="panel-expired">
-    <div class="panel-body">
-        <div class="d-flex flex-row justify-between">
-        <div class="panel-section">
-            <div class="panel-head"><h2>Trail for Meraki Wifi 7 for Enterprise</h2><span class="badge expired-request">Expired</span></div>
-            <div class="panel-details-inner d-flex flex-row justify-between">
-            <div>
-                <div class="key">Trial ID</div>
-                <div class="value">93276589</div>
-            </div>
-            <div>
-                <div class="key">Customer</div>
-                <div class="value">Amazon</div>
-            </div>
-            <div>
-                <div class="key">Trial Value</div>
-                <div class="value">USD 21,908</div>
-            </div>
-            <div class="start-expiry-date">
-               <div>
-                    <div class="key">Start Date</div>
-                    <div class="value">Apr 10, 2024</div>
-               </div> 
-               <div class="remaining-days">
-                    <ul class="days-expired">
-                        <li class="active"><span class="cs-icon-check"></span></li>
-                        <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>Expired</span></span></li>
-                        <li class="default"><span class="cs-icon-warning-outline"></span></li>
-                    </ul>
-               </div>
-               <div>
-                <div class="key">Expiry Date</div>
-                <div class="value">Jun 10, 2024</div>
-           </div> 
-            </div>
+  <div class="panel-body">
+    <div class="d-flex flex-row justify-between">
+    <div class="panel-section w-full">
+        <div class="panel-head"><h2>Trail for Cloud-based network platform</h2><span class="badge expired-request">Expired</span></div>
+        <div class="panel-details-inner d-flex flex-row justify-between">
+        <div>
+            <div class="key">Trial ID</div>
+            <div class="value">93276589</div>
         </div>
+        <div>
+            <div class="key">Trial Value</div>
+            <div class="value">USD 24,124</div>
         </div>
+        <div class="start-expiry-date">
+            <div>
+                 <div class="key">Start Date</div>
+                 <div class="value">Apr 10, 2024</div>
+            </div> 
+            <div class="remaining-days">
+                 <ul class="days-expired">
+                     <li class="active"><span class="cs-icon-check"></span></li>
+                     <li class="days-count"><span class="days-left"><span class="cs-icon-clock"></span><span>Expired</span></span></li>
+                     <li class="default"><span class="cs-icon-warning-outline"></span></li>
+                 </ul>
+            </div>
+            <div>
+             <div class="key">Expiry Date</div>
+             <div class="value">Jun 10, 2024</div>
+        </div> 
          </div>
     </div>
+    </div>
+     </div>
+</div>
   </div>
   </div>
 </div>
-
-
-        </div>
-        <!--/ div dashboard content-->
-    </div>
 
 
 </div>

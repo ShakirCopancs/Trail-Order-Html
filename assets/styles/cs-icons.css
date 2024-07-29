@@ -11,40 +11,21 @@
   }
   
   
-  [class^="cs-icon-"], [class*=" cs-icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'cs-icons' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-.cs-icon-steps .path1:before {
-  content: "\e928";
-  color: rgb(142, 142, 142);
+[class^="cs-icon-"], [class*=" cs-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cs-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.cs-icon-steps .path2:before {
-  content: "\e929";
-  margin-left: -1em;
-  color: rgb(235, 235, 235);
-}
-.cs-icon-steps .path3:before {
-  content: "\e92a";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.cs-icon-steps .path4:before {
-  content: "\e92b";
-  margin-left: -1em;
-  color: rgb(142, 142, 142);
-}
+
 .cs-icon-location:before {
   content: "\e92c";
 }
@@ -73,31 +54,6 @@
 }
 .cs-icon-phone:before {
   content: "\e909";
-}
-.cs-icon-pie .path1:before {
-  content: "\e922";
-  color: rgb(255, 255, 255);
-}
-.cs-icon-pie .path2:before {
-  content: "\e923";
-  margin-left: -1.7041015625em;
-  color: rgb(116, 191, 75);
-  opacity: 0.3;
-}
-.cs-icon-pie .path3:before {
-  content: "\e924";
-  margin-left: -1.7041015625em;
-  color: none;
-}
-.cs-icon-pie .path4:before {
-  content: "\e925";
-  margin-left: -1.7041015625em;
-  color: rgb(116, 191, 75);
-}
-.cs-icon-pie .path5:before {
-  content: "\e926";
-  margin-left: -1.7041015625em;
-  color: none;
 }
 .cs-icon-tick-fill:before {
   content: "\e927";
