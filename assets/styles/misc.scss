@@ -86,6 +86,7 @@ hr{ border: 0;
 .grid-cols-3 {grid-template-columns: repeat(3, minmax(0, 1fr));}
 .grid-cols-4 {grid-template-columns: repeat(3, minmax(0, 1fr));}
 
+.gap-54 { gap: 3.375rem;}
 .gap-32 { gap: 2rem;}
 .gap-24 { gap: 1.5rem; }
 .gap-12 { gap: 12px;}
