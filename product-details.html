@@ -15,9 +15,22 @@
       <div class="d-flex justify-between item-center padding-B-24">
         <h3>Cisco Meraki Wifi 7 for Metlife</h3>
         <div class="d-flex gap-12">
-          <button class="btn btn-secondary">Return</button
+          <button
+            class="btn btn-secondary"
+            data-drawer-trigger
+            aria-controls="request-return"
+            aria-expanded="false"
+          >
+            Return</button
           ><button class="btn btn-secondary">Extend Trial</button
-          ><button class="btn btn-primary">Request a Quote</button>
+          ><button
+            class="btn btn-primary"
+            data-drawer-trigger
+            aria-controls="request-quote"
+            aria-expanded="false"
+          >
+            Request a Quote
+          </button>
         </div>
       </div>
       <!--sub header details-->
@@ -261,6 +274,510 @@
           </div>
         </div>
       </section>
+      <!-- ------------- Trakking Drawer ----------- -->
+      <!-- ------------- Request-return-Drawer ----------- -->
+      <section
+        class="drawer drawer--right"
+        id="request-return"
+        data-drawer-target
+      >
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper drawer__view-details drawer_w_1070">
+          <div class="drawer__header">
+            <h4>Request Return</h4>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
+          </div>
+          <div class="drawer__content">
+            <div
+              class="drawer-content-header d-flex justify-between item-center"
+            >
+              <h5>Select Serial Numbers</h5>
+              <div class="d-flex gap-12">
+                <button class="btn btn-secondary">Cancel</button
+                ><button class="btn btn-primary" id="continueButton">
+                  Submit Return
+                </button>
+              </div>
+            </div>
+            <table id="returnsTable" class="request_quote_table">
+              <thead>
+                <tr>
+                  <th><button class="toggle">+</button></th>
+                  <th>Part/Serial Number</th>
+                  <th>Available Qty</th>
+                  <th>Selected Qty</th>
+                  <th>Utilization</th>
+                  <th>Activation Date</th>
+                  <th>Last Contact Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="parent">
+                  <td><button class="toggle">+</button></td>
+                  <td>MR44-HW</td>
+                  <td>8</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="child-checkbox"
+                      checked
+                    />EDW2804YE1S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />RRW2804YE32
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />TRW2804YE32
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />FCW2804YE9S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />RTW1204YE3E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />WW2804YE6S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />TTW1204YE9E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="parent">
+                  <td><button class="toggle">+</button></td>
+                  <td>MR76-HW</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />WW2804YE6S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />TTW1204YE9E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="parent">
+                  <td><button class="toggle">+</button></td>
+                  <td>MR56-HW</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />RTW1204YE3E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />WW2804YE6S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ------------- Request-return-Drawer ----------- -->
+      <!-- ------------- Request-Quote-Drawer ----------- -->
+      <section
+        class="drawer drawer--right"
+        id="request-quote"
+        data-drawer-target
+      >
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper drawer__view-details drawer_w_1070">
+          <div class="drawer__header">
+            <h4>Request a Quote</h4>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
+          </div>
+          <div class="drawer__content">
+            <div
+              class="drawer-content-header d-flex justify-between item-center"
+            >
+              <h5>Select Serial Numbers</h5>
+              <div class="d-flex gap-12">
+                <button class="btn btn-secondary">Cancel</button
+                ><button
+                  class="btn btn-primary"
+                  id="continueButton"
+                  data-drawer-trigger
+                  aria-controls="select-partner"
+                  aria-expanded="false"
+                >
+                  Continue to Partner
+                </button>
+              </div>
+            </div>
+            <table id="dataTable" class="request_quote_table">
+              <thead>
+                <tr>
+                  <th><button class="toggle">+</button></th>
+                  <th>Part/Serial Number</th>
+                  <th>Available Qty</th>
+                  <th>Selected Qty</th>
+                  <th>Utilization</th>
+                  <th>Activation Date</th>
+                  <th>Last Contact Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="parent">
+                  <td><button class="toggle">+</button></td>
+                  <td>MR44-HW</td>
+                  <td>8</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="child-checkbox"
+                      checked
+                    />EDW2804YE1S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />RRW2804YE32
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />TRW2804YE32
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />FCW2804YE9S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />RTW1204YE3E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />WW2804YE6S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />TTW1204YE9E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="parent">
+                  <td><button class="toggle">+</button></td>
+                  <td>MR76-HW</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />WW2804YE6S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />TTW1204YE9E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="parent">
+                  <td><button class="toggle">+</button></td>
+                  <td>MR56-HW</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />RTW1204YE3E
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-in-use">In Use</span>
+                  </td>
+                  <td>July 25, 2024</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+                <tr class="child">
+                  <td></td>
+                  <td>
+                    <input type="checkbox" class="child-checkbox" />WW2804YE6S
+                  </td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td class="utilization">
+                    <span class="badge badge-not-in-use">Not In Use</span>
+                  </td>
+                  <td>-</td>
+                  <td>Jul 10, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ------------- Request-Quote-Drawer ----------- -->
+      <!-- ------------- Select-Partner-Drawer ----------- -->
+      <section
+        class="drawer drawer--right"
+        id="select-partner"
+        data-drawer-target
+      >
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper drawer__view-details drawer_w_1070">
+          <div class="drawer__header">
+            <h4>Select Partner</h4>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
+          </div>
+          <div class="drawer__content">
+            <div
+              class="drawer-content-header d-flex justify-between item-center"
+            >
+              <h5>Lookup Partner by</h5>
+              <div class="d-flex gap-12">
+                <button class="btn btn-primary" id="continueButton">
+                  Continue
+                </button>
+              </div>
+            </div>
+            <table id="SideAssociate" class="request_quote_table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>City</th>
+                  <th>State/Province</th>
+                  <th>Country</th>
+                  <th>Zip/Postal Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="radio" /></td>
+                  <td>CDW</td>
+                  <td>N19 W23993 Ridgview PKWY W</td>
+                  <td>Waukesha</td>
+                  <td>WI</td>
+                  <td>United States</td>
+                  <td>53188</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ------------- Select-Partner-Drawer ----------- -->
     </div>
     <!--/ container-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -268,5 +785,30 @@
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/drawer.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        function updateButtonState() {
+          if ($('input[type="checkbox"]:checked').length > 0) {
+            $("#continueButton")
+              .removeClass("btn-disable")
+              .addClass("btn-primary");
+          } else {
+            $("#continueButton")
+              .removeClass("btn-primary")
+              .addClass("btn-disable");
+          }
+        }
+        $(".parent").click(function () {
+          $(this).nextUntil(".parent").toggle();
+          $(this)
+            .find(".toggle")
+            .text($(this).find(".toggle").text() == "+" ? "-" : "+");
+        });
+        $(".child-checkbox").change(function () {
+          updateButtonState();
+        });
+        updateButtonState();
+      });
+    </script>
   </body>
 </html>

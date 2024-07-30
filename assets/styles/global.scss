@@ -559,3 +559,89 @@ td {
   line-height: 20px;
   color: #606162;
 }
+
+.request_quote_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.request_quote_table th,
+td {
+  border-top: 1px solid #ebebeb;
+  padding: 14px;
+  border-bottom: 1px solid #ebebeb;
+}
+.request_quote_table th {
+  color: #1b1c1d;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: justify;
+}
+.request_quote_table .child td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.request_quote_table .child {
+  display: none;
+}
+.request_quote_table .child:nth-child(even) {
+  background-color: #f4f5f6;
+}
+
+.request_quote_table .utilization {
+  color: green;
+}
+.request_quote_table .toggle {
+  border-radius: 20px;
+  border: 1px solid #1b1c1d;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+.request_quote_table input[type="checkbox"] {
+  border-radius: 0.25em;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-print-color-adjust: exact;
+  border: 1px solid #d6d6d6;
+}
+.request_quote_table input[type="checkbox"]:checked {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23ffffff" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');
+  background-color: #227bb1;
+  border-color: #227bb1;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #1b1c1d;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+}
+
+.badge-in-use {
+  background-color: #ddf2d8;
+}
+
+.badge-not-in-use {
+  background-color: #ebebeb;
+}
