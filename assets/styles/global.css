@@ -414,6 +414,9 @@ input[type=text] {
   border: none;
   color: var(--cs-content-disable-btn);
   border: 1px solid var(--cs-btn-border-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .alert-section {
