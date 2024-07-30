@@ -96,12 +96,17 @@ table { border-collapse: collapse; width: 100%;
     }
 }
 
-.text-input[type="text"] {
+.text-input {
     padding: 10px 16px;
     border:1px solid var(--cs-border-color);
     width: 100%;
     border-radius: 4px;
     height: 40px;
+    font-size: 14px;
+    color: #1B1C1D;
+    &:focus{
+        outline: none;
+    }
 }
 
 .search-lg {
@@ -114,11 +119,11 @@ table { border-collapse: collapse; width: 100%;
     }
 }
 
-input[type="text"] {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
+// input[type="text"] {
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 24px;
+// }
 
 .search-component {
     width: 296px;
@@ -132,7 +137,7 @@ input[type="text"] {
             border-color: var(--cs-border-active-color); 
             transition: border-color 0.5s;
         }
-    }
+    } 
 }
 
 .guide-me-link { 

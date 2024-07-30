@@ -559,3 +559,86 @@ td {
   line-height: 20px;
   color: #606162;
 }
+
+// Modal Css Start
+.uk-modal{
+  &.uk-open{
+    display: flex!important;
+    align-items: center;
+  }
+  .uk-modal-dialog{
+    width: 100%;
+    max-width: 480px;
+  }
+  .uk-modal-header{
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F7FC;
+    border-bottom: 1px solid #ddd;
+    &.modal-header-transparent{
+      border: none;
+      background-color: transparent;
+      padding-bottom: 0;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      color:var(--cs-body-color);
+  }
+  .uk-btn-close{
+ 
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='15px' height='16px' viewBox='0 0 15 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='2.-Menu' transform='translate(-15.000000, -13.000000)' stroke='%23000000'%3E%3Cg id='Group' transform='translate(15.000000, 13.521000)'%3E%3Cpath d='M0,0.479000129 L15,14.2971819' id='Path-3'%3E%3C/path%3E%3Cpath d='M0,14.7761821 L15,-1.24344979e-14' id='Path-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+  }
+  .uk-modal-body{
+padding: 24px;
+
+.help-text{
+  font-size: 12px;
+  color: var(--cs-label-color);
+  padding-top: 5px;
+}
+  }
+.uk-modal-footer{
+  padding: 0px 24px 24px;
+  display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+}
+
+select{
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9.00005 14.0126L1.9463 6.27263C1.73818 6.042 1.75505 5.68763 1.98568 5.4795C2.2163 5.27138 2.57068 5.28825 2.7788 5.51888L9.00005 12.342L15.2213 5.51888C15.4294 5.28825 15.7894 5.27138 16.0144 5.4795C16.245 5.68763 16.2619 6.042 16.0538 6.27263L9.00005 14.007V14.0126Z" fill="%23606162"/></svg>') no-repeat right 10px center;
+  background-size: 16px;
+color:var(--cs-body-color);
+}
+.alert-section{
+&.alert-success {
+  background-color: #F0F8ED;
+  border-left: 2px solid #399E20;
+}
+h4{
+  font-size: 16px;
+font-weight: 700;
+margin: 0 0 10px 0;
+line-height: normal;
+color:var(--cs-body-color);
+}
+}
