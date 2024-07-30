@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/form.css" />
   </head>
   <body>
     <div class="cs-sub-header">
@@ -303,7 +304,12 @@
               <h5>Select Serial Numbers</h5>
               <div class="d-flex gap-12">
                 <button class="btn btn-secondary">Cancel</button
-                ><button class="btn btn-primary" id="continueButton">
+                ><button
+                  class="btn btn-primary"
+                  uk-toggle="target: #return-request"
+                  data-drawer-close
+                  aria-label="Close Drawer"
+                >
                   Submit Return
                 </button>
               </div>
@@ -750,66 +756,239 @@
             >
               <h5>Lookup Partner by</h5>
               <div class="d-flex gap-12">
-                <button class="btn btn-primary" id="continueButton">
+                <button
+                  class="btn btn-primary"
+                  data-drawer-trigger
+                  aria-controls="review-submit"
+                  aria-expanded="false"
+                >
                   Continue
                 </button>
               </div>
             </div>
-            <table id="SideAssociate" class="request_quote_table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <th>City</th>
-                  <th>State/Province</th>
-                  <th>Country</th>
-                  <th>Zip/Postal Code</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="radio" /></td>
-                  <td>CDW</td>
-                  <td>N19 W23993 Ridgview PKWY W</td>
-                  <td>Waukesha</td>
-                  <td>WI</td>
-                  <td>United States</td>
-                  <td>53188</td>
-                </tr>
-                <tr>
-                  <td><input type="radio" /></td>
-                  <td>CDW</td>
-                  <td>1850 E NORTHROP BLVD</td>
-                  <td>Chandler</td>
-                  <td>AZ</td>
-                  <td>United States</td>
-                  <td>532348</td>
-                </tr>
-                <tr>
-                  <td><input type="radio" /></td>
-                  <td>CDW</td>
-                  <td>2 CORPORATE DR</td>
-                  <td>Shelton</td>
-                  <td>CT</td>
-                  <td>United States</td>
-                  <td>342352</td>
-                </tr>
-                <tr>
-                  <td><input type="radio" /></td>
-                  <td>CDW</td>
-                  <td>1850 E NORTHROP BLVD</td>
-                  <td>Chandler</td>
-                  <td>CH</td>
-                  <td>United States</td>
-                  <td>53188</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="lookup-country-data">
+              <div class="country-field">
+                <p>Country and City</p>
+                <span
+                  >Begin your partner search by selecting a country and
+                  city</span
+                >
+                <div class="d-flex flex-row gap-16 padding-B-16">
+                  <div class="w-6-12">
+                    <label class="label asterisk">Country</label>
+                    <select id="country">
+                      <option>List 1</option>
+                      <option>List 2</option>
+                    </select>
+                  </div>
+                  <div class="w-6-12">
+                    <label class="label asterisk">Country</label>
+                    <select id="country">
+                      <option>List 1</option>
+                      <option>List 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="content-divider">
+                <span>And/Or</span>
+              </div>
+              <div class="search-field">
+                <p>Search</p>
+                <span>Commence your search using either an email address</span>
+                <div class="">
+                  <label class="label asterisk">Email ID</label>
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="Search by Email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="tabular-data">
+              <h5>Choose from Recent Partners</h5>
+              <table id="SideAssociate" class="request_quote_table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State/Province</th>
+                    <th>Country</th>
+                    <th>Zip/Postal Code</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="radio" /></td>
+                    <td>CDW</td>
+                    <td>N19 W23993 Ridgview PKWY W</td>
+                    <td>Waukesha</td>
+                    <td>WI</td>
+                    <td>United States</td>
+                    <td>53188</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" /></td>
+                    <td>CDW</td>
+                    <td>1850 E NORTHROP BLVD</td>
+                    <td>Chandler</td>
+                    <td>AZ</td>
+                    <td>United States</td>
+                    <td>532348</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" /></td>
+                    <td>CDW</td>
+                    <td>2 CORPORATE DR</td>
+                    <td>Shelton</td>
+                    <td>CT</td>
+                    <td>United States</td>
+                    <td>342352</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" /></td>
+                    <td>CDW</td>
+                    <td>1850 E NORTHROP BLVD</td>
+                    <td>Chandler</td>
+                    <td>CH</td>
+                    <td>United States</td>
+                    <td>53188</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
       <!-- ------------- Select-Partner-Drawer ----------- -->
+      <!-- ------------- Review-Submit-Drawer ----------- -->
+      <section
+        class="drawer drawer--right"
+        id="review-submit"
+        data-drawer-target
+      >
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper drawer__view-details drawer_w_1070">
+          <div class="drawer__header">
+            <h4>Review & Submit</h4>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
+          </div>
+          <div class="drawer__content">
+            <div
+              class="drawer-content-header d-flex justify-between item-center"
+            >
+              <h5>Quote Summary</h5>
+              <div class="d-flex gap-12">
+                <button
+                  class="btn btn-secondary"
+                  data-drawer-trigger
+                  aria-controls="select-partner"
+                  aria-expanded="false"
+                >
+                  Back</button
+                ><button
+                  class="btn btn-primary"
+                  uk-toggle="target: #quote-request"
+                  data-drawer-close
+                  aria-label="Close Drawer"
+                >
+                  Request a Quote
+                </button>
+              </div>
+            </div>
+            <div class="alert-section alert-warning margin-T-12">
+              <img src="./assets/images/info-outline.svg" alt="" />
+              <span
+                >You are requesting a Quote with the partner below
+                specifications. The partner will be notified once the request is
+                submitted.
+              </span>
+            </div>
+            <div class="drawer-content-column margin-T-24">
+              <h5>Partner Information</h5>
+              <div class="details-column">
+                <div class="d-flex flex-row gap-24 padding-B-24 w-full">
+                  <div class="details-column-item account-details-tile">
+                    <span class="column-title">Partner address</span>
+                    <div class="margin-T-24 margin-B-24">
+                      <h6 class="column-heading">CDW</h6>
+                      <div class="body-text fw-400">
+                        N19 W23993 Ridgview PKWY W<br />Waukesha, WI, 53188<br />United
+                        States
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-column-item account-details-tile">
+                    <span class="column-title">Contact</span>
+                    <div class="margin-T-24 margin-B-24">
+                      <h6 class="column-heading">Maria Roark</h6>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-mail"></span
+                        ><span class="fw-400 lh-24">maria.roark@aos5.com</span>
+                      </div>
+                      <div class="d-flex item-center gap-8">
+                        <span class="cs-icon-phone"></span
+                        ><span class="fw-400 lh-24">+1-508 922-6032</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="drawer-content-column">
+              <h5>Selected Products</h5>
+              <div class="details-column">
+                <div
+                  class="d-flex flex-col flex-row gap-24 padding-B-24 w-full"
+                >
+                  <div
+                    class="w-full account-details-tile d-flex gap-24 justify-between"
+                  >
+                    <div class="margin-T-4 margin-B-4 content-box">
+                      <div class="body-text-title">Product</div>
+                      <h6 class="column-heading">MR44-HW</h6>
+                    </div>
+                    <div class="margin-T-4 margin-B-4 min-content-box">
+                      <div class="body-text-title">Requested Qty</div>
+                      <h6 class="body-text-content fw-400">8</h6>
+                    </div>
+                    <div class="margin-T-4 margin-B-4 content-box">
+                      <div class="body-text-title">Serial numbers</div>
+                      <h6 class="body-text-content fw-400">
+                        EDW2804YE1S, RRW2804YE32, TRW2804YE32 +5
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full account-details-tile d-flex gap-24 justify-between"
+                  >
+                    <div class="margin-T-4 margin-B-4 content-box">
+                      <div class="body-text-title">Product</div>
+                      <h6 class="column-heading">MR76-HW</h6>
+                    </div>
+                    <div class="margin-T-4 margin-B-4 min-content-box">
+                      <div class="body-text-title">Requested Qty</div>
+                      <h6 class="body-text-content fw-400">1</h6>
+                    </div>
+                    <div class="margin-T-4 margin-B-4 content-box">
+                      <div class="body-text-title">Serial numbers</div>
+                      <h6 class="body-text-content fw-400">EDW2804YE1S</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------- Review-Submit-Drawer ----------- -->
     </div>
     <!--/ container-->
 
@@ -864,7 +1043,57 @@
       </div>
     </div>
     <!--/Extend Trial Modal Window-->
-
+    <!--Quote Request Modal Window-->
+    <div id="quote-request" class="uk-modal" uk-modal>
+      <div class="uk-modal-dialog">
+        <div class="uk-modal-content">
+          <div class="uk-modal-header modal-header-transparent">
+            <h4 class="uk-modal-title">Quote request</h4>
+            <button type="button" class="uk-btn-close uk-modal-close"></button>
+          </div>
+          <div class="uk-modal-body">
+            <div class="alert-section alert-success">
+              <span class="icon">&#10003;</span>
+              <div class="alert-section-message">
+                <h4 class="fw-400">
+                  Your requested quote has been successfully sent to the Maria
+                  Roark (maria.roark@aos5.com) from CDW for review and follow
+                  up.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="uk-modal-footer">
+            <button type="button" class="btn btn-primary">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Quote Request Modal Window-->
+    <!--Return Request Modal Window-->
+    <div id="return-request" class="uk-modal" uk-modal>
+      <div class="uk-modal-dialog">
+        <div class="uk-modal-content">
+          <div class="uk-modal-header modal-header-transparent">
+            <h4 class="uk-modal-title">Return Request</h4>
+            <button type="button" class="uk-btn-close uk-modal-close"></button>
+          </div>
+          <div class="uk-modal-body">
+            <div class="alert-section alert-success">
+              <span class="icon">&#10003;</span>
+              <div class="alert-section-message">
+                <h4>Your Trial Return request has been submitted</h4>
+                Return order is successfully submitted and will be processed.
+              </div>
+            </div>
+          </div>
+          <div class="uk-modal-footer">
+            <button type="button" class="btn btn-primary">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Return Request Modal Window-->
     <!--Extension Request Modal Window-->
     <div id="extension-request" class="uk-modal" uk-modal>
       <div class="uk-modal-dialog">
@@ -896,30 +1125,5 @@
 
     <script src="assets/js/drawer.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-      $(document).ready(function () {
-        function updateButtonState() {
-          if ($('input[type="checkbox"]:checked').length > 0) {
-            $("#continueButton")
-              .removeClass("btn-disable")
-              .addClass("btn-primary");
-          } else {
-            $("#continueButton")
-              .removeClass("btn-primary")
-              .addClass("btn-disable");
-          }
-        }
-        $(".parent").click(function () {
-          $(this).nextUntil(".parent").toggle();
-          $(this)
-            .find(".toggle")
-            .text($(this).find(".toggle").text() == "+" ? "-" : "+");
-        });
-        $(".child-checkbox").change(function () {
-          updateButtonState();
-        });
-        updateButtonState();
-      });
-    </script>
   </body>
 </html>

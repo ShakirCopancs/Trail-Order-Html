@@ -646,6 +646,10 @@ hr {
   margin: 1.125rem 0;
 }
 
+.margin-T-4 {
+  margin-top: 0.25rem;
+}
+
 .margin-T-12 {
   margin-top: 0.75rem;
 }
@@ -910,7 +914,7 @@ hr {
 }
 
 .fw-400 {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .fw-700 {
@@ -1586,6 +1590,13 @@ select {
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9.00005 14.0126L1.9463 6.27263C1.73818 6.042 1.75505 5.68763 1.98568 5.4795C2.2163 5.27138 2.57068 5.28825 2.7788 5.51888L9.00005 12.342L15.2213 5.51888C15.4294 5.28825 15.7894 5.27138 16.0144 5.4795C16.245 5.68763 16.2619 6.042 16.0538 6.27263L9.00005 14.007V14.0126Z" fill="%23606162"/></svg>') no-repeat right 10px center;
   background-size: 16px;
   color: var(--cs-body-color);
+  padding: 10px 16px;
+  border: 1px solid var(--cs-border-color);
+  width: 100%;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 14px;
+  background-color: #fff;
 }
 
 .alert-section.alert-success {
@@ -1619,6 +1630,13 @@ td {
   font-weight: 700;
   line-height: 20px;
   text-align: justify;
+}
+
+.request_quote_table td {
+  color: #606162;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .request_quote_table .child td:nth-child(2) {
@@ -1691,4 +1709,101 @@ td {
 
 .badge-not-in-use {
   background-color: #ebebeb;
+}
+
+.tabular-data input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #d6d6d6;
+  border-radius: 50%;
+  margin-top: 3px;
+  height: 16px;
+  width: 16px;
+}
+
+.tabular-data input[type=radio]:checked {
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%23227bb1'/%3e%3c/svg%3e");
+}
+
+.lookup-country-data {
+  display: flex;
+  gap: 24px;
+  background: #f4f5f6;
+  padding: 24px;
+  border-radius: 4px;
+  margin: 16px 0 24px;
+}
+.lookup-country-data .country-field,
+.lookup-country-data .search-field {
+  max-width: 450px;
+  width: 100%;
+}
+.lookup-country-data .country-field p,
+.lookup-country-data .search-field p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1b1c1d;
+}
+.lookup-country-data .country-field span,
+.lookup-country-data .search-field span {
+  color: #606162;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 16px;
+  display: block;
+}
+.lookup-country-data .content-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.lookup-country-data .content-divider::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #d6d6d6;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.lookup-country-data .content-divider span {
+  display: block;
+  background-color: #f4f5f6;
+  z-index: 1;
+  padding: 5px 0px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #606162;
+}
+
+.body-text-title {
+  color: #606162;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+
+.min-content-box {
+  max-width: 150px;
+  width: 100%;
+}
+
+.content-box {
+  max-width: 450px;
+  width: 100%;
+}
+
+.body-text-content {
+  color: #1b1c1d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }/*# sourceMappingURL=global.css.map */

@@ -38,3 +38,28 @@ $(".text-change").click(function(){
 
 });
 
+
+
+$(document).ready(function () {
+  function updateButtonState() {
+    if ($('input[type="checkbox"]:checked').length > 0) {
+      $("#continueButton")
+        .removeClass("btn-disable")
+        .addClass("btn-primary");
+    } else {
+      $("#continueButton")
+        .removeClass("btn-primary")
+        .addClass("btn-disable");
+    }
+  }
+  $(".parent").click(function () {
+    $(this).nextUntil(".parent").toggle();
+    $(this)
+      .find(".toggle")
+      .text($(this).find(".toggle").text() == "+" ? "-" : "+");
+  });
+  $(".child-checkbox").change(function () {
+    updateButtonState();
+  });
+  updateButtonState();
+});
