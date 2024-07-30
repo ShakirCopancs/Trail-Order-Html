@@ -22,7 +22,12 @@
             aria-expanded="false"
           >
             Return</button
-          ><button class="btn btn-secondary">Extend Trial</button
+          ><button
+            type="button"
+            class="btn btn-secondary"
+            uk-toggle="target: #extend-trial"
+          >
+            Extend Trial</button
           ><button
             class="btn btn-primary"
             data-drawer-trigger
@@ -62,7 +67,8 @@
               <li class="active"><span class="cs-icon-check"></span></li>
               <li class="days-count">
                 <span class="days-left"
-                  ><span class="cs-icon-clock"></span><span>88 days remaining</span></span
+                  ><span class="cs-icon-clock"></span
+                  ><span>88 days remaining</span></span
                 >
               </li>
               <li class="default"><span></span></li>
@@ -109,12 +115,20 @@
     <div class="container">
       <!--div drawer-->
       <!-- <a href="#" class="text-link" data-drawer-trigger aria-controls="help-me" aria-expanded="false">Help text</a> -->
-      <section class="drawer drawer--right" id="customer-info" data-drawer-target>
+      <section
+        class="drawer drawer--right"
+        id="customer-info"
+        data-drawer-target
+      >
         <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
         <div class="drawer__wrapper drawer__view-details drawer_w_1070">
           <div class="drawer__header">
             <h4>Customer Details</h4>
-            <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
           </div>
           <div class="drawer__content">
             <div class="drawer-content-column">
@@ -126,12 +140,14 @@
                     <div class="margin-T-24 margin-B-24">
                       <h6 class="column-heading">Metlife</h6>
                       <div class="body-text fw-400">
-                        132 Turnpike Road, Suite 300<br />Southborough, MA, 01772<br />United States
+                        132 Turnpike Road, Suite 300<br />Southborough, MA,
+                        01772<br />United States
                       </div>
                     </div>
                     <div class="customerId">
                       <span class="d-flex gap-5"
-                        ><strong class="fw-700">Customer ID</strong>1016884202</span
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
                       >
                     </div>
                   </div>
@@ -141,7 +157,9 @@
                       <h6 class="column-heading">Olivia Kurl</h6>
                       <div class="d-flex item-center gap-8">
                         <span class="cs-icon-mail"></span
-                        ><span class="fw-400 lh-24">olivia.kurl@turntable.com</span>
+                        ><span class="fw-400 lh-24"
+                          >olivia.kurl@turntable.com</span
+                        >
                       </div>
                       <div class="d-flex item-center gap-8">
                         <span class="cs-icon-phone"></span
@@ -154,7 +172,8 @@
                     </div>
                     <div class="customerId">
                       <span class="d-flex gap-5"
-                        ><strong class="fw-700">Customer ID</strong>1016884202</span
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
                       >
                     </div>
                   </div>
@@ -170,12 +189,14 @@
                     <div class="margin-T-24 margin-B-24">
                       <h6 class="column-heading">Metlife</h6>
                       <div class="body-text fw-400">
-                        132 Turnpike Road, Suite 300<br />Southborough, MA, 01772<br />United States
+                        132 Turnpike Road, Suite 300<br />Southborough, MA,
+                        01772<br />United States
                       </div>
                     </div>
                     <div class="customerId">
                       <span class="d-flex gap-5"
-                        ><strong class="fw-700">Customer ID</strong>1016884202</span
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
                       >
                     </div>
                   </div>
@@ -198,7 +219,8 @@
                     </div>
                     <div class="customerId">
                       <span class="d-flex gap-5"
-                        ><strong class="fw-700">Customer ID</strong>1016884202</span
+                        ><strong class="fw-700">Customer ID</strong
+                        >1016884202</span
                       >
                     </div>
                   </div>
@@ -211,12 +233,20 @@
       <!--/ div drawer-->
 
       <!-- ------------- Trakking Drawer ----------- -->
-      <section class="drawer drawer--right" id="trekking-info" data-drawer-target>
+      <section
+        class="drawer drawer--right"
+        id="trekking-info"
+        data-drawer-target
+      >
         <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
         <div class="drawer__wrapper drawer__view-details">
           <div class="drawer__header">
             <h4>Shipping and Tracking Details</h4>
-            <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+            <button
+              class="drawer__close"
+              data-drawer-close
+              aria-label="Close Drawer"
+            ></button>
           </div>
           <div class="drawer__content">
             <table class="table-trekking">
@@ -795,32 +825,48 @@
             <div class="padding-B-16">
               <label class="label">Reason for Extension</label>
               <select class="text-input">
-                <option class="default-option" value="" selected disabled>Select an option</option>
+                <option class="default-option" value="" selected disabled>
+                  Select an option
+                </option>
                 <option>Extended Setup Time</option>
                 <option>Thorough Testing Needs</option>
                 <option>Integration Hurdles</option>
                 <option>Unexpected Delays</option>
               </select>
-              
             </div>
             <div class="padding-B-0">
-              <label class="label">For how many days would you like to extend?</label>
-              <input class="text-input" type="text" placeholder="Enter the number of days" />
-              <div class="help-text">Extension permitted for maximum 30 days.</div>
+              <label class="label"
+                >For how many days would you like to extend?</label
+              >
+              <input
+                class="text-input"
+                type="text"
+                placeholder="Enter the number of days"
+              />
+              <div class="help-text">
+                Extension permitted for maximum 30 days.
+              </div>
             </div>
           </div>
           <div class="uk-modal-footer">
-            <button type="button" class="uk-modal-close btn btn-secondary" >Cancel</button>
-            <button type="button" class="btn btn-primary" uk-toggle="target: #extension-request">Submit</button>
+            <button type="button" class="uk-modal-close btn btn-secondary">
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              uk-toggle="target: #extension-request"
+            >
+              Submit
+            </button>
           </div>
-        </div>
         </div>
       </div>
     </div>
     <!--/Extend Trial Modal Window-->
 
-     <!--Extension Request Modal Window-->
-     <div id="extension-request" class="uk-modal" uk-modal>
+    <!--Extension Request Modal Window-->
+    <div id="extension-request" class="uk-modal" uk-modal>
       <div class="uk-modal-dialog">
         <div class="uk-modal-content">
           <div class="uk-modal-header modal-header-transparent">
@@ -831,23 +877,23 @@
             <div class="alert-section alert-success">
               <span class="icon">&#10003;</span>
               <div class="alert-section-message">
-                  <h4>Your Trial Extension request has been submitted for approval</h4>
-                  You'll receive the updated expiration date once it's approved.
+                <h4>
+                  Your Trial Extension request has been submitted for approval
+                </h4>
+                You'll receive the updated expiration date once it's approved.
               </div>
-          </div>
+            </div>
           </div>
           <div class="uk-modal-footer">
-         
-            <button type="button" class="btn btn-primary" >Continue</button>
+            <button type="button" class="btn btn-primary">Continue</button>
           </div>
-        </div>
         </div>
       </div>
     </div>
     <!--/Extension Request Modal Window-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/js/uikit.min.js"></script>
-   
+
     <script src="assets/js/drawer.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
